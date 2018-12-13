@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="icon" href="logo.png" type="image/png" sizes="16x16">
+    <title>Prisma Menorca S.L.</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Roboto|Telex" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-social/5.1.1/bootstrap-social.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@7.32.2/dist/sweetalert2.min.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="css/styles.css" />
+    <script src="https://code.jquery.com/jquery-3.1.1.js" integrity="sha256-16cdPddA6VdVInumRGo6IbivbERE8p7CQR3HzTBuELA="
+        crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js" integrity="sha256-T0Vest3yCU7pafRw9r+settMBX6JkKN06dqBnpQ8d30="
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@7.32.2/dist/sweetalert2.all.min.js"></script>
+    <script src="js/main.js"></script>
+</head>
+
+<body>
+    <nav class="navbar navbar-dark navbar-expand-md">
+        <div class="container">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#Navbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <a class="navbar-brand ml-auto" href="./index.html" style="font-family: 'Telex', sans-serif;">
+                <img src="img/logoPrismaWhite.svg" alt="Logo Prisma Menorca" height="40"><span class="align-middle d-none d-sm-inline">PRISMA</span>
+            </a>
+            <div class="collapse navbar-collapse" id="Navbar">
+                <ul class="navbar-nav mr-right">
+                    <li class="nav-item"><a class="nav-link" href="./index.html">Inici</a></li>
+                    <li class="nav-item"><a class="nav-link" href="./stationary.html">Material d'oficina</a></li>
+                    <li class="nav-item"><a class="nav-link" href="./it.html">Informàtica</a></li>
+                    <li class="nav-item"><a class="nav-link" href="./office.html">Mobiliari d'oficina</a></li>
+                    <li class="nav-item active"><a class="nav-link" href="#">Comandes i avisos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="./contact.html">Contacta</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="container mt-4 mb-5">
+        <div class="row">
+            <div class="col-12">
+                <h1>Comandes i avisos de reparació</h1>
+                <p>Tens una averia a casa i vols que la vinguem a arreglar? Et queda poca tinta i et vols assegurar que
+                        no et quedis sense? Emplena aquest formulari i ens posarem en contacte!</p>
+                <hr>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12">
+                <div class="alert alert-warning alert-dismissible fade show">
+                    <i class="fa fa-exclamation-triangle pr-1"></i>
+                    Emplena tots els camps del formulari.
+                    <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                        <span>&times;</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <form id="form" class="w-100">
+                <div class="col-md-6 float-left">
+                    <div class="form-group">
+                        <label for="name">Nom</label>
+                        <input type="text" class="form-control" id="name" placeholder="Nom">
+                    </div>
+                    <div class="form-group">
+                        <label for="surnames">Llinatges</label>
+                        <input type="text" class="form-control" id="surnames" placeholder="Llinatges">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Correu electrònic</label>
+                        <input type="email" class="form-control" id="email" placeholder="E-mail">
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Teléfon</label>
+                        <input type="tel" class="form-control" id="phone" placeholder="Teléfon">
+                    </div>
+                </div>
+                <div class="col-md-6 float-right">
+                    <div class="form-group">
+                        <label for="message">Missatge</label>
+                        <textarea class="form-control" id="message"></textarea>
+                    </div>
+                </div>
+                <div class="col-md-6 float-left">
+                    <button type="button" id="submit" class="btn btn-success" >Envia</button>
+                    <button type="button" id="clear" class="btn btn-danger">Esborra</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <!--Footer-->
+  <footer class="footer mt-5">
+    <div class="container">
+      <div class="row pt-3 pb-3">
+        <div class="col-12 col-sm-9 pb-3 pb-sm-0 d-flex justify-content-center flex-wrap">
+          <a href="http://www.mrmicro.es/"><img src="img/logo_micro.png" alt="Logo Mr Micro" height="35"></a>
+          <a href="http://www.icg.es/"><img src="img/logo_icg.png" alt="Logo ICG" height="35"></a>
+          <a href="http://www.info3.es/"><img src="img/logo_i3.png" alt="Logo Informatica 3" height="35"></a>
+          <a href="https://www.brother.es/"><img src="img/logo_brother.png" alt="Logo Brother" height="35"></a>
+          <a href="https://www.oki.com/"><img src="img/logo_oki.png" alt="Logo Oki" height="35"></a>
+          <a href="http://www.mobellinea.com/"><img src="img/logo_mobel.png" alt="Logo Informatica 3" height="35"></a>
+          <a href="https://www.actiu.com/es/"><img src="img/logo_actiu.png" alt="Logo Actiu" height="35"></a>
+        </div>
+        <!--Social media buttons-->
+        <div class="col-12 col-sm-3 align-self-center">
+          <div class="text-center">
+            <a class="btn btn-social-icon btn-facebook" href="https://www.facebook.com/prismamenorca"><i class="fa fa-facebook"></i></a>
+            <a class="btn btn-social-icon btn-twitter" href="http://twitter.com/"><i class="fa fa-twitter"></i></a>
+            <a class="btn btn-social-icon" href="mailto:gescopy@prismamenorca.info"><i class="fa fa-envelope"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+</body>
+
+</html>

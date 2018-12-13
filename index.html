@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Prisma Menorca S.L.</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Roboto|Telex" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-social/5.1.1/bootstrap-social.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@7.32.2/dist/sweetalert2.min.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="css/styles.css" />
+    <script src="https://code.jquery.com/jquery-3.1.1.js" integrity="sha256-16cdPddA6VdVInumRGo6IbivbERE8p7CQR3HzTBuELA="
+        crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js" integrity="sha256-T0Vest3yCU7pafRw9r+settMBX6JkKN06dqBnpQ8d30="
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@7.32.2/dist/sweetalert2.all.min.js"></script>
+    <script src="js/main.js"></script>
+</head>
+
+<body>
+  <nav class="navbar navbar-dark navbar-expand-md">
+    <div class="container">
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#Navbar">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <a class="navbar-brand ml-auto" href="#" style="font-family: 'Telex', sans-serif;">
+        <img src="img/logoPrismaWhite.svg" alt="Logo Prisma Menorca" height="40"><span class="align-middle d-none d-sm-inline">PRISMA</span>
+      </a>
+      <div class="collapse navbar-collapse" id="Navbar">
+        <ul class="navbar-nav mr-right">
+          <li class="nav-item active"><a class="nav-link" href="#">Inici</a></li>
+          <li class="nav-item"><a class="nav-link" href="./stationary.html">Material d'oficina</a></li>
+          <li class="nav-item"><a class="nav-link" href="./it.html">Informàtica</a></li>
+          <li class="nav-item"><a class="nav-link" href="./office.html">Mobiliari d'oficina</a></li>
+          <li class="nav-item"><a class="nav-link" href="./orders.html">Comandes i avisos</a></li>
+          <li class="nav-item"><a class="nav-link" href="./contact.html">Contacta</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!--Carousel-->
+  <div id="carousel-container" class="container mt-1">
+    <div class="row justify-content-center">
+      <div class="col-12">
+        <div id="carouselControls" class="carousel slide" data-ride="carousel">
+          <!--Indicators-->
+          <ol class="carousel-indicators">
+            <li data-target="#carouselControls" data-slide-to="0" class="active"></li>
+            <li data-target="#carouselControls" data-slide-to="1"></li>
+            <li data-target="#carouselControls" data-slide-to="2"></li>
+          </ol>
+          <!-- The slideshow -->
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <a href="./stationary.html">
+                <img class="mx-auto d-block img-fluid" src="img/stationary.png" alt="Stationary items">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5 class="d-inline-block">Material d'oficina</h5>
+                  <p>Aquí trobaràs tot el material de oficina que necessites.</p>
+                </div>
+              </a>
+            </div>
+            <div class="carousel-item">
+              <a href="./office.html">
+                <img class="mx-auto d-block img-fluid" src="img/office.jpg" alt="Office furniture">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5 class="d-inline-block">Mobiliari d'oficina</h5>
+                  <p>Tenim un ample catàleg de mobles d'oficina a la vostra disposició.</p>
+                </div>
+              </a>
+            </div>
+            <div class="carousel-item">
+              <a href="./it.html">
+                <img class="mx-auto d-block img-fluid" src="img/it.png" alt="Technological devices">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5 class="d-inline-block">Informàtica</h5>
+                  <p>Oferim grans ofertes en productes i serveis informàtics.</p>
+                </div>
+              </a>
+            </div>
+          </div>
+          <!-- Left and right controls -->
+          <a class="carousel-control-prev" href="#carouselControls" data-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+          </a>
+          <a class="carousel-control-next" href="#carouselControls" data-slide="next">
+            <span class="carousel-control-next-icon"></span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container mt-5">
+    <div class="row">
+      <div class="col-12">
+        <h2 class="text-center"><em>Ofertes</em></h2>
+        <hr>
+      </div>
+    </div>
+    <div class="row mb-5 ml-1 mr-1">
+      <div class="card-deck">
+        <div class="card">
+          <img class="card-img-top img-thumbnail" src="img/oki_printer.jpg" alt="OKI Printer">
+          <div class="card-body">
+            <h5 class="card-title"><strong>Cost per copia OKI</strong></h5>
+            <p class="card-text">Redueix els gasts d'impressió amb els programes de Cost x Còpia d'OKI. Podràs
+              estalviar fins a un 30% per pàgina impresa!</p>
+          </div>
+        </div>
+
+        <div class="card">
+          <img class="card-img-top img-thumbnail" src="img/frontrest.png" alt="TPV with ICG Frontrest">
+          <div class="card-body">
+            <h5 class="card-title"><strong>ICG FrontRest</strong></h5>
+            <p class="card-text">Configuram i instal·lam TPVs amb el software de gestió per excel·lència del sector de
+              la hostleria.</p>
+          </div>
+        </div>
+        <div class="card">
+          <img class="card-img-top img-thumbnail" src="img/brother_printer.JPG" alt="Brother Printer">
+          <div class="card-body">
+            <h5 class="card-title"><strong>Plan Renove Brother</strong></h5>
+            <p class="card-text">Prisma et descompta 100€ de la nova Brother HL-6160DW si ens portes la teva antigua
+              impresora.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!--Footer-->
+  <footer class="footer mt-5">
+    <div class="container">
+      <div class="row pt-3 pb-3">
+        <div class="col-12 col-sm-9 pb-3 pb-sm-0 d-flex justify-content-center flex-wrap">
+          <a href="http://www.mrmicro.es/"><img src="img/logo_micro.png" alt="Logo Mr Micro" height="35"></a>
+          <a href="http://www.icg.es/"><img src="img/logo_icg.png" alt="Logo ICG" height="35"></a>
+          <a href="http://www.info3.es/"><img src="img/logo_i3.png" alt="Logo Informatica 3" height="35"></a>
+          <a href="https://www.brother.es/"><img src="img/logo_brother.png" alt="Logo Brother" height="35"></a>
+          <a href="https://www.oki.com/"><img src="img/logo_oki.png" alt="Logo Oki" height="35"></a>
+          <a href="http://www.mobellinea.com/"><img src="img/logo_mobel.png" alt="Logo Informatica 3" height="35"></a>
+          <a href="https://www.actiu.com/es/"><img src="img/logo_actiu.png" alt="Logo Actiu" height="35"></a>
+        </div>
+        <!--Social media buttons-->
+        <div class="col-12 col-sm-3 align-self-center">
+          <div class="text-center">
+            <a class="btn btn-social-icon btn-facebook" href="https://www.facebook.com/prismamenorca"><i class="fa fa-facebook"></i></a>
+            <a class="btn btn-social-icon btn-twitter" href="http://twitter.com/"><i class="fa fa-twitter"></i></a>
+            <a class="btn btn-social-icon" href="mailto:gescopy@prismamenorca.info"><i class="fa fa-envelope"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

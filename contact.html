@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Prisma Menorca S.L.</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Roboto|Telex" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-social/5.1.1/bootstrap-social.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@7.32.2/dist/sweetalert2.min.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="css/styles.css" />
+    <script src="https://code.jquery.com/jquery-3.1.1.js" integrity="sha256-16cdPddA6VdVInumRGo6IbivbERE8p7CQR3HzTBuELA="
+        crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js" integrity="sha256-T0Vest3yCU7pafRw9r+settMBX6JkKN06dqBnpQ8d30="
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@7.32.2/dist/sweetalert2.all.min.js"></script>
+    <script src="js/main.js"></script>
+</head>
+
+<body>
+    <nav class="navbar navbar-dark navbar-expand-md">
+        <div class="container">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#Navbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <a class="navbar-brand ml-auto" href="./index.html" style="font-family: 'Telex', sans-serif;">
+                <img src="img/logoPrismaWhite.svg" alt="Logo Prisma Menorca" height="40"><span class="align-middle d-none d-sm-inline">PRISMA</span>
+            </a>
+            <div class="collapse navbar-collapse" id="Navbar">
+                <ul class="navbar-nav mr-right">
+                    <li class="nav-item"><a class="nav-link" href="./index.html">Inici</a></li>
+                    <li class="nav-item"><a class="nav-link" href="./stationary.html">Material d'oficina</a></li>
+                    <li class="nav-item"><a class="nav-link" href="./it.html">Informàtica</a></li>
+                    <li class="nav-item"><a class="nav-link" href="./office.html">Mobiliari d'oficina</a></li>
+                    <li class="nav-item"><a class="nav-link" href="./orders.html">Comandes i avisos</a></li>
+                    <li class="nav-item active"><a class="nav-link" href="#">Contacta</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="container mt-4 mb-4">
+        <div class="row row-header">
+            <div class="col-12">
+                <h1>Contacta amb nosaltres!</h1>
+                <hr>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-12 col-md-6 align-self-center">
+                <h3>Localització</h3>
+                <h5>Adreça</h5>
+                <address style="font-size: 100%">
+                    C/ Industrials, parcela 80<br>
+                    07760, Ciutadella de Menorca<br>
+                    Illes Balears<br>
+                    Espanya<br>
+                    <i class="fa fa-phone fa-lg"></i> +34 971 481 380<br>
+                    <i class="fa fa-fax fa-lg"></i> +34 971 484 226<br>
+                    <i class="fa fa-envelope fa-lg"></i> <a href="mailto:gescopy@prismamenorca.info">gescopy@prismamenorca.info</a>
+                </address>
+            </div>
+            <div class="col-sm-12 col-md-6">
+                <div class="embed-responsive embed-responsive-4by3">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3056.0704330073095!2d3.852860114884177!3d40.00687427941478!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xd3ace341bbddcaba!2sPrisma+Menorca!5e0!3m2!1ses!2ses!4v1544556227934"
+                        width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-10 col-md-7 text-center mx-auto mt-5 pt-2">
+                <div class="accordion" id="accordion">
+                    <div id ="horari" class="card">
+                        <div class="card-header" id="heading">
+                            <h5 class="mb-0">
+                                <button class="btn btn-dark btn-lg btn-block" type="button" data-toggle="collapse" data-target="#collapse">
+                                    Horari
+                                </button>
+                            </h5>
+                        </div>
+                        <div id="collapse" class="collapse" data-parent="#accordion">
+                            <div class="card-body  pb-0 pt-0">
+                                <ul class="list-group list-group-flush">
+                                    <li class="list-group-item d-flex justify-content-between">
+                                        <span class="day">Dilluns</span>
+                                        <span>8:30-13:30 / 15:30-19:30</span>
+                                    </li>
+                                    <li class="list-group-item d-flex justify-content-between">
+                                        <span class="day">Dimarts</span>
+                                        <span>8:30-13:30 / 15:30-19:30</span>
+                                    </li>
+                                    <li class="list-group-item d-flex justify-content-between">
+                                        <span class="day">Dimecres</span>
+                                        <span>8:30-13:30 / 15:30-19:30</span>
+                                    </li>
+                                    <li class="list-group-item d-flex justify-content-between">
+                                        <span class="day">Dijous</span>
+                                        <span>8:30-13:30 / 15:30-19:30</span>
+                                    </li>
+                                    <li class="list-group-item d-flex justify-content-between">
+                                        <span class="day">Divendres</span>
+                                        <span>8:30-13:30 / 15:30-19:30</span></li>
+                                    <li class="list-group-item d-flex justify-content-between">
+                                        <span class="day">Dissabte</span>
+                                        <span>8:30-13:30</span>
+                                    </li>
+                                    <li class="list-group-item d-flex justify-content-between">
+                                        <span class="day">Diumenge</span>
+                                        <span>Tancat</span>
+                                    </li>
+                                </ul>
+                            </div>  
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>>
+    </div>
+   <!--Footer-->
+  <footer class="footer mt-5">
+    <div class="container">
+      <div class="row pt-3 pb-3">
+        <div class="col-12 col-sm-9 pb-3 pb-sm-0 d-flex justify-content-center flex-wrap">
+          <a href="http://www.mrmicro.es/"><img src="img/logo_micro.png" alt="Logo Mr Micro" height="35"></a>
+          <a href="http://www.icg.es/"><img src="img/logo_icg.png" alt="Logo ICG" height="35"></a>
+          <a href="http://www.info3.es/"><img src="img/logo_i3.png" alt="Logo Informatica 3" height="35"></a>
+          <a href="https://www.brother.es/"><img src="img/logo_brother.png" alt="Logo Brother" height="35"></a>
+          <a href="https://www.oki.com/"><img src="img/logo_oki.png" alt="Logo Oki" height="35"></a>
+          <a href="http://www.mobellinea.com/"><img src="img/logo_mobel.png" alt="Logo Informatica 3" height="35"></a>
+          <a href="https://www.actiu.com/es/"><img src="img/logo_actiu.png" alt="Logo Actiu" height="35"></a>
+        </div>
+        <!--Social media buttons-->
+        <div class="col-12 col-sm-3 align-self-center">
+          <div class="text-center">
+            <a class="btn btn-social-icon btn-facebook" href="https://www.facebook.com/prismamenorca"><i class="fa fa-facebook"></i></a>
+            <a class="btn btn-social-icon btn-twitter" href="http://twitter.com/"><i class="fa fa-twitter"></i></a>
+            <a class="btn btn-social-icon" href="mailto:gescopy@prismamenorca.info"><i class="fa fa-envelope"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
