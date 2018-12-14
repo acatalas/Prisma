@@ -9,9 +9,12 @@ body {
     display: block;
 }
 
+/*Changes the navbar's background color*/
 .navbar-dark {
     background-color: #0A2C59;
 }
+
+/*Carousel*/
 .carousel img{
     object-fit: cover;
     height: 390px;
@@ -31,10 +34,14 @@ body {
     background-color: rgba(255,255,255, 0.9);
     color: #131515;
 }
+
+/*Textarea is taller*/
 textarea{
     height: 20vh;
 }
- address, label, button, input, textarea {
+
+/*Changes the font for certain elements*/
+address, label, button, input, textarea {
     font-family: 'Roboto', sans-serif;
 }
 
@@ -43,6 +50,7 @@ h1, h2, h5{
     font-weight: bold;
 }
 
+/*Changes the styling of the Bootstrap btn-default button*/
 .btn-default{
     background-color: #999E97;
     border-color: #999E97;
@@ -55,20 +63,13 @@ h1, h2, h5{
     color: white;
 }
 
-.card{
-    background-color: #e9e9e9;
-}
-
+/*Horari drop-down / accordion*/
 #horari, #collapse li{
     background-color: #181a1a;
     color: rgb(207, 207, 207);
     border-right-color: #181a1a;
     border-left-color: #181a1a;
     border-radius: 5px;
-}
-
-.day{
-   font-style: italic; 
 }
 
 .card-img-top {
@@ -78,6 +79,15 @@ h1, h2, h5{
     object-fit: cover;
 }
 
+.card{
+    background-color: #e9e9e9;
+}
+
+.day{
+    font-style: italic; 
+ }
+
+/*Footer styling*/
 footer{
     background-color: #0A2C59;
     color: white;
@@ -89,9 +99,12 @@ footer a {
 footer img {
     margin-left: 5px;
 }
+
+/*Images are shown with a grey cover until the user hovers over it*/
 .img-thumbnail {
     opacity: 0.8;
 }
+
 .img-thumbnail:hover{
     opacity: 1.0;
 }
